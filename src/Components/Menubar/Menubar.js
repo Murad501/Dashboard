@@ -1,6 +1,7 @@
 import React from "react";
 import { FaAlignCenter, FaAtom, FaDesktop, FaKey, FaMap, FaUserAlt, FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import logo from '../../Assets/argon-react.128d71d3.png'
 
 const Menubar = () => {
   const menus = [
@@ -56,7 +57,8 @@ const Menubar = () => {
     
   ];
   return (
-    <div className="w-96 px-3">
+    <div className="w-64 px-5 py-5 h-screen sticky top-0">
+      <img className="w-3/5 mx-auto mb-10" src={logo} alt='logo' />
       {menus.map((menu, idx) => (
         <Link key={idx} className="flex items-center gap-5 py-3">
           <span className={menu.iconColor}>{menu.icon}</span>

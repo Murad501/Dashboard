@@ -11,7 +11,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className='max-w-screen-xl mx-auto font-sans'>
+    <div className='max-w-screen-2xl mx-auto font-sans'>
       <RouterProvider router={router}></RouterProvider>
     </div>
   );
